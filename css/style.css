@@ -115,7 +115,7 @@ header ul li a:hover {
 }
 header .container nav .toggle-menu {
     color: var(--top-color);
-    font-size: var(--larg-font);
+    font-size: var(--small-font);
 }
 /* end header */
 /* start landing */
