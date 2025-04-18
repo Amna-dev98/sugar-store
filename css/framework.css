@@ -147,12 +147,14 @@ header ul li a,
       content: "☰";
       float: right;
       margin-left: 10px;
+      color: var(--top-color);
     }
   
     header .container nav summary::after {
       content: "☰";
       float: right;
       margin-left: 10px;
+      color: var(--top-color);
     }
   
     header .container nav details {
