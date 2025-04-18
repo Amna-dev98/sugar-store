@@ -31,16 +31,16 @@
                     <h4><a href="#home">sugar store</a></h4>
                 </div>
                 <nav>
-                    <button type="button">
-                        <i class="fas fa-bars toggle-menu"></i>
-                    </button>
-                    <ul class="flx-btwn">
-                        <li><a href="#home">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#ourDeshes">gallary</a></li>
-                        <li><a href="#menu">menu</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
+                    <details>
+                        <summary></summary>
+                        <ul>
+                          <li><a href="#home" onclick="this.closest('details').removeAttribute('open')">home</a></li>
+                          <li><a href="#about" onclick="this.closest('details').removeAttribute('open')">about</a></li>
+                          <li><a href="#ourDeshes" onclick="this.closest('details').removeAttribute('open')">gallary</a></li>
+                          <li><a href="#menu" onclick="this.closest('details').removeAttribute('open')">menu</a></li>
+                          <li><a href="#contact" onclick="this.closest('details').removeAttribute('open')">contact</a></li>
+                        </ul>
+                      </details>                      
                 </nav>
             </div>
         </header>
