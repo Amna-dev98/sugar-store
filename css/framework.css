@@ -159,6 +159,7 @@ header ul li a,
   
     header .container nav details {
       position: relative;
+      color: var(--top-color);
     }
 }
 /* about */
