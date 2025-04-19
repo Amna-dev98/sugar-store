@@ -109,8 +109,45 @@ header ul li a,
 }
 /* start media */
 /* header */
-@media (max-width:767px) {
+@media (min-width: 768px) {
+    header .container {
+        position: relative;
+    }
+    header .container nav.nav-desktop {
+        position: absolute;
+        right: 0;
+    }
     header .container nav ul {
+      display: flex !important;
+      flex-direction: row;
+      position: static;
+      gap: 0;
+      background: transparent;
+      padding: 0;
+    }
+  
+    header .container nav ul li {
+      padding: 0;
+      width: auto;
+    }
+}
+@media (min-width: 768px) {
+    .nav-desktop {
+      display: block;
+    }
+    .nav-mobile {
+      display: none;
+    }
+}
+@media (max-width: 767px) {
+    .nav-desktop {
+      display: none;
+    }
+    .nav-mobile {
+      display: block;
+    }
+
+    .nav-mobile ul {
       display: flex;
       flex-direction: column;
       gap: 17px;
@@ -123,41 +160,45 @@ header ul li a,
       padding: 10px 0;
     }
   
-    header .container nav ul li {
+    .nav-mobile li {
       width: 100%;
       padding: 0 61px;
     }
   
-    header .container nav ul li:hover {
+    .nav-mobile li:hover {
       background-color: var(--main-color);
     }
   
-    header .container nav ul li:hover a {
+    .nav-mobile li:hover a {
       border-bottom: none;
     }
   
-    header .container nav summary {
+    .nav-mobile summary {
       list-style: none;
       cursor: pointer;
       color: var(--top-color);
       font-size: var(--small-font);
     }
   
-    header .container nav details[open] summary::after {
-      content: "☰";
+    .nav-mobile details[open] summary::after {
+      content: "\f0c9";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
       float: right;
       margin-left: 10px;
       color: var(--top-color);
     }
   
-    header .container nav summary::after {
-      content: "☰";
+    .nav-mobile summary::after {
+      content: "\f0c9";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
       float: right;
       margin-left: 10px;
       color: var(--top-color);
     }
   
-    header .container nav details {
+    .nav-mobile details {
       position: relative;
       color: var(--top-color);
     }
