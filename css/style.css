@@ -113,10 +113,6 @@ header ul li a {
 header ul li a:hover {
     border-bottom: 1px solid var(--top-color, #f47f8e);
 }
-header .container nav .toggle-menu {
-    color: var(--top-color);
-    font-size: var(--small-font);
-}
 /* end header */
 /* start landing */
 .landing {
