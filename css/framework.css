@@ -59,6 +59,8 @@ img {max-width: 100%;}
 h1 {
     font-size: var(--larg-font);
 }
+@media (max-width: 767px) {
+    h1 {font-size: 2.5em;}}
 p {font-size: var(--small-font);}
 hr {height: 2px;
     border: none;
