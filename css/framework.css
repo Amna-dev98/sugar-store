@@ -12,6 +12,10 @@
     outline: none;
     outline-color: transparent;
 }
+::selection {
+    background-color: var(--top-color);
+    color: #fff;
+}
 ::-webkit-scrollbar {
     width: 11px;
     transition: width 0.3s ease;
