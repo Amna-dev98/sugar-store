@@ -12,18 +12,20 @@
     outline: none;
     outline-color: transparent;
 }
-::selection {
-    background-color: var(--top-color);
-    color: #fff;
-}
 ::-webkit-scrollbar {
-    width: 17px;
+    width: 11px;
+    transition: width 0.3s ease;
 }
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--main-color);
+::-webkit-scrollbar:hover {
+    width: 17px;
 }
 ::-webkit-scrollbar-thumb {
     background-color: var(--top-color);
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-color);
 }
 ::-webkit-scrollbar-track {
     background-color: #fff;
